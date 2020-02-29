@@ -1,42 +1,46 @@
 % !TEX program = xelatex
 
-\documentclass{resume}
+\documentclass[10pt]{resume}
 %\usepackage{tabu}
 %\usepackage{multirow}
 %\usepackage{progressbar}
-%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
 %\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{Jin Hangyu}
+\name{金航羽}
 
 \basicInfo{
   \email{735525714@qq.com} \textperiodcentered\ 
 }
-\section{\faGraduationCap\ Education}
-\datedsubsection{\textbf{Sun Yat-sen University (SYSU)}, Guangzhou, China}{2016 - Present}
-\textit{Undergraduate} in Financial Management (FM), GPA: 3.7/4
+\section{\faGraduationCap\ 教育经历}
+\datedsubsection{\textbf{中山大学}, Guangzhou, China}{2016至今}
+财务管理学士, GPA: 3.7/4
 
-\textbf{Major courses}: Accounting, Derivatives and Options, Financial statement analysis, Advanced mathematics,
-Linear algebra, Probability and Statistics, MIS, Auditing, Monetary and Banking, Econometrics
+\textbf{主修课程}: 会计, 期权、期货及其他衍生品, 财务报表分析, 高等数学,
+线性代数, 概率论与数理统计, 管理信息系统, 审计学, 货币银行学, 计量经济学
 
-\section{\faUsers\ Campus Activity}
-\datedsubsection{\textbf{Association Department of the Communist Youth League}}{2016/09 - 2017/06}
+\section{\faUsers\ 活动实践}
+\datedsubsection{\textbf{中山大学校团工委社团部}}{2016/09 - 2017/06}
 
-\textbf{Experience}: Organized and planned activities, mainly responsible for stage planning, Independently responsible for joint activities and sponsorship activities among Universities, Operated public accounts
+\textbf{经历}: 参与组织策划中山大学校园社团系列活动百团大战及社团文化节活动，主要负责舞台策划。在组内独立负
+责外校联谊访问及部门赞助事宜。参与运营社团部公众号。
 
-\datedsubsection{\textbf{The Guitar Association}}{2016/09 - 2017/01}
+\datedsubsection{\textbf{中山大学吉他协会}}{2016/09 - 2017/01}
 
-\section{\faCogs\ Internship}
-\datedsubsection{\textbf{Bank of East Asia, Guangzhou Branch}\textit{(Enterprise Banking Department)}}{2018/07 - 2018/09}
+\section{\faCogs\ 实习经历}
+\datedsubsection{\textbf{东亚银行广州分行}\textit{(企业银行部)}}{2018/07 - 2018/09}
 
-\textbf{Experience}: Vertificated business credit, Wrote credit report, Developed enterprise credit granting and intermediate business products
+\textbf{经历}: 核实企业授信条件、撰写信贷报告，开发企业授信及中间业务产品，分析整理客户数据并进行业务营销等。
 
-\datedsubsection{\textbf{The Pacific Securities, Headquarter}\textit{(Asset Management Department)}}{2019/01 - Present}
+\datedsubsection{\textbf{太平洋证券总部}\textit{(资产管理部)}}{2019/01 - 2019/04}
 
-\textbf{Experience}: Fixed income and equity management services, Market value management, Asset securitization, Realized fixed growth in the first-and-a-half market
+\textbf{经历}: 固定收益及权益理财管理服务，投融资和市值管理服务，承销管理资产证券化，设计债券资管产品及衍生
+对冲产品，实现一级半市场的定增等。
 
 % Reference Test
 %\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
@@ -45,29 +49,29 @@ Linear algebra, Probability and Statistics, MIS, Auditing, Monetary and Banking,
 %  \item main contribution
 %\end{itemize}
 
-\section{\faFlask\ Academic Research}
-\textbf{Modeling Report}: Time Estimation and Strategic Analysis of Tesla’s Electric Popularization, Optimizing Passenger Throughput at Airport Security Station, Optimizing Bus Route Query Algorithms, Research on the Rationality of Option Pricing Model
+\section{\faFlask\ 学术研究}
+\textbf{建模报告}: 规划特斯拉电动化普及时间及规模、优化机场安检站的乘客吞吐量、优化公交路线查询算法、期权BS定价模型优化
 
-\datedsubsection{\textbf{Scientific research ability}: Participated in the school postdoctoral research team}{2018/03 – Present}
+\datedsubsection{\textbf{科研能力}: 参与学校博士后科研小组}{2018/03至今}
 
-\textit{Direction}: Game Theory and Mechanism Design, had read dozens of papers abroad, writing paper now
+\textit{研究方向}: 博弈论与机制设计，已读相关国内外论文数十篇，已完成一篇论文。
 
-\datedsubsection{MSCI}{2019/02 - Present}
+\datedsubsection{MSCI}{2019/02 - 2019/04}
 
-Used Python, \textit{M}atlab and other tools to study the distribution of random variables, option pricing, computed the VaR and the Expected Shortfall of portfolio, optimized pricing model and evaluated enterprise investment
+使用Python，\textit{M}atlab和其他工具研究随机变量的分布，期权定价，计算VaR和ES，优化定价模型和评估企业投资。
 
-\section{\faHeartO\ Honors and Awards}
-Sun Yat-Sen University Excellent Student Scholarship
+\section{\faHeartO\ 获奖情况}
+中山大学优秀学生奖学金
 
-\datedline{\textit{\nth{2} Prize}, Bridge+ National Youth Business Simulation Competition }{Oct. 2016}
-\datedline{\textit{\nth{2} Prize}, ”Mathematics Innovation Cup” National University Mathematical Modeling Competition}{Nov. 2017}
-\datedline{\textit{Honorable Mention}, Mathematical Contest In Modeling}{Feb. 2018}
+\datedline{Bridge+第二届全国青年商战模拟大赛二等奖}{2016/10}
+\datedline{“数创杯”全国大学生数学建模挑战赛二等奖}{2017/11}
+\datedline{美国大学生数学建模竞赛H奖}{2018/02}
 
-\section{\faInfo\ Skill}
+\section{\faInfo\ 专业能力}
 \begin{itemize}[parsep=0.5ex]
-  \item \textbf{Mathematical Analysis Ability}: Have clear logic, the mathematics courses in university are all above 95 points, minoring in the relevant courses of the College of Mathematics, had Mathematical modeling experience, proficient in using \textit{M}atlab, \LaTeX and Python
-  \item \textbf{Data Analysis Ability}: Can effectively collect data and use database to analyse
-  \item  \textbf{Organizational Planning Ability}: Planned two school-level stage activities, organized many sponsorship activities with enterprises, have good communication and crisis management skills
+  \item \textbf{数理分析能力}: 有一定数理背景，逻辑清晰，大学所修数学类课程均在95分以上，且正在辅修数学学院相关课程。有数学建模经历，能够基本运用\textit{M}atlab，Python和\LaTeX
+  \item \textbf{数据分析能力}: 能有效搜集数据，并用数据库整合数据
+  \item  \textbf{组织策划能力}:策划两场校级舞台活动、赞助活动，组织与广州高校的外访联谊活动，具有高效沟通和危机处理能力。 
 \end{itemize}
 
 %% Reference
